@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="test"></p>
+
+<script>
+// Create an object:
+const student_marks = {English:"89", Maths:"70", Science:"68"};
+
+// Display some data from the object:
+document.getElementById("test").innerHTML = "Marks of English :  " + student_marks.English;
+</script>
+
+</body>
+</html>

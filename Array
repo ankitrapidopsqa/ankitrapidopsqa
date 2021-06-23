@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+<p id="test"></p>
+
+<script>
+// Create an Array:
+const student = ["Ankit", "Kalp", "Hardik"];
+
+// Change an element:
+student[0] = "Hemal";
+
+// Add an element:
+student.push("Bhavna");
+
+// Display the Array:
+document.getElementById("test").innerHTML = student; 
+</script>
+
+</body>
+</html>

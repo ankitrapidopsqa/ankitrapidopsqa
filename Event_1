@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+
+<HTML>
+<body>
+// Without 'This'
+<button onclick="document.getElementById('test').innerHTML=Date()"> The current time is : </button>
+<p id = "test"> </p>
+
+//With 'This'
+<button onclick="this.innerHTML=Date()">The current time is : </button>
+
+
+
+</body>
+</HTML>

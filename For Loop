@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<HTML>
+<body>
+<H1> This is a program for 'FOR' loop </H1>
+
+<p id="test"> </p>
+<script>
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+var text = "";
+
+for (var i=0; i<=days.length; i++){
+
+    text+= days[i];
+}
+document.getElementById('test').innerHTML=text;
+</script>
+</body>
+</HTML>

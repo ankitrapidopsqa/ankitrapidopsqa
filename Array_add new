@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+
+<p id="test"></p>
+
+<script>
+// Create an object:
+const candidate = {name:"Ankit", gender:"male", city:"ahmedabad", profile:"qa engineer"};
+
+// Change a property:
+candidate.profile = "software engineer";
+
+// Add a property:
+candidate.name = "Hemal";
+
+// Display the property:
+document.getElementById("test").innerHTML = "New candidate is " + candidate.name; 
+</script>
+
+</body>
+</html>

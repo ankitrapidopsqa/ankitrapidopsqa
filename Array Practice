@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html> 
+<body>
+
+<p id ="learning"></p>
+<script>
+const position = ["HR", " PM", " TL", " TC", " Trainer", " SR", " QA", " JR", " Trainee"];
+
+document.getElementById("learning").innerHTML = "Available Positions in our company: "+ position;
+
+
+
+document.getElementById("learning").innerHTML = "Current requirement :" + position [1];
+
+
+//changing an array
+const cars = ["Tesla", "Audi", "BMW"];
+cars[1] = "KIA";
+document.getElementById("learning").innerHTML = cars;
+
+
+// Sorting an array
+const make = ["Tesla", "Audi", "BMW", "Suzuki", "Tesla", "Honda", "Tata", "Skoda"];
+document.getElementById("learning").innerHTML = make.sort();
+
+// Length of array
+document.getElementById("learning").innerHTML = make.length;
+
+
+
+</script>
+</body>
+</html>

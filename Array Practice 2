@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html> 
+<body>
+
+<p id ="learning"></p>
+<p id="lr1"></p>
+<p id="lr2"></p>
+<p id="lr3"></p>
+<button onclick="myFunction()">Try it</button>
+<script>
+
+/*const make = ["Tesla", "Audi", "BMW", "Suzuki", "Tesla", "Honda", "Tata", "Skoda"];
+var fLen = make.length;
+
+var text = "<ul>";
+
+for (var i=0; i<fLen; i++){
+text += "<li>" + make [i] + "</li>";
+}
+text +="</ul>";
+// Length of array
+document.getElementById("learning").innerHTML = text;
+
+
+const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+var fWeek = week.length;
+
+var text = "<ul>";
+
+for (var i = 0; i<fWeek; i++){
+text+= "<li>" + week [i] + "</li>";
+}
+
+
+text +="</ul>";
+document.getElementById("learning").innerHTML = text;
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("learning").innerHTML = fruits.join(" * ");
+*/
+
+/*const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("lr1").innerHTML = fruits;
+document.getElementById("lr2").innerHTML = fruits.pop();
+document.getElementById("lr3").innerHTML = fruits;
+*/
+
+
+/*const veggies = ["Potato", "Tomato", "Broccoli", "Cabbage", "Ladyfinger"];
+document.getElementById("learning").innerHTML = veggies;
+
+function myFunction() {
+  veggies.push("Bringel");
+  document.getElementById("learning").innerHTML = veggies;
+}
+*/
+
+/*const fruits = ["Banana", "Orange", "Apple", "Mango", "Grapes"];
+document.getElementById("lr1").innerHTML = fruits;
+
+function myFunction() {
+  document.getElementById("lr1").innerHTML = fruits.push("Kiwi");
+  document.getElementById("lr2").innerHTML = fruits;
+}
+*/
+/*const fruits = ["Banana", "Orange", "Apple", "Mango", "Grapes", "Kiwi"];
+document.getElementById("lr1").innerHTML = fruits;
+fruits.shift();
+document.getElementById("lr2").innerHTML = fruits;
+*/
+/*const fruits = ["Banana", "Orange", "Cherry", "Kiwi"];
+document.getElementById("learning").innerHTML = fruits;
+
+function myFunction() {
+  fruits.unshift("Lemon");
+  document.getElementById("learning").innerHTML = fruits;
+}
+*/
+
+/* const juice = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("lr1").innerHTML = "Fruit juice: " + juice[0];
+
+delete juice[0];
+
+document.getElementById("lr2").innerHTML =
+"The first juice is: " + juice[0];
+*/
+
+const post = ["HR", "Manager", "Developer", "QA"];
+document.getElementById("learning").innerHTML = post;
+function myFunction() {
+  post.splice(0, 1);
+  document.getElementById("learning").innerHTML = post;
+
+</script>
+</body>
+</html>

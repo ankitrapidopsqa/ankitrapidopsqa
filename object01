@@ -1,0 +1,35 @@
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+
+const x = person;
+x.age = 10;
+
+console.log(person.irstname+ "is" + person.age + "years old.");
+
+
+var person = {name: "Ankit", age: "35", favColor: "Blue", height: 183};
+var x = person.age;
+var y = person.['age'];
+
+var course = {name : "Java Script", lessons : 41};
+
+console.log(course.name.length);
+
+
+
+function person(name, age, color){
+this.name = name;
+this.age = age;
+this.favColor = color;
+}
+
+var p = new car("Suzuki", 2018, "Grey");
+var q = new car("Hyundai",2020 , "Red");
+
+console.log(x.make);
+console.log(y.model);
+

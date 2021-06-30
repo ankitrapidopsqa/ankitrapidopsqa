@@ -1,0 +1,21 @@
+{
+  "name": "webdriver-io",
+  "version": "1.0.0",
+  "description": "Learning automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit Brahmbhatt",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.7.4"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.7.4",
+    "@wdio/mocha-framework": "^7.7.4",
+    "@wdio/spec-reporter": "^7.7.3",
+    "chromedriver": "^91.0.1",
+    "wdio-chromedriver-service": "^7.1.1"
+  }
+}

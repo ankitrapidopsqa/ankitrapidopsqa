@@ -1,0 +1,11 @@
+// Create an Array:
+const student = ["Ankit", "Kalp", "Hardik"];
+
+// Change an element:
+student[0] = "Hemal";
+
+// Add an element:
+student.push("Bhavna");
+
+// Display the Array:
+console.log("This is an Array testing:" +student);

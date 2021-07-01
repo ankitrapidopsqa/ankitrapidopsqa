@@ -1,0 +1,19 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test_file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitrapidopsqa/ankitrapidopsqa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitrapidopsqa/ankitrapidopsqa/issues"
+  },
+  "homepage": "https://github.com/ankitrapidopsqa/ankitrapidopsqa#readme"
+}

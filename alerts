@@ -1,7 +1,7 @@
-var user = prompt("Enter your name");
+//var user = prompt("Enter your name");
 
 
-/*alert ("Are you sure you want to leave this page?);
+//alert ("Are you sure you want to leave this page?);
 
 var result = confirm ("Do you really want to leave this page?");
 
@@ -10,4 +10,4 @@ if (result == true){
 }
 else{
     alert ("Thanks for staying with us");
-}*/
+}

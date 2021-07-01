@@ -1,0 +1,51 @@
+//Operators : Assignment '='
+
+var x=5;
+var y = 3.14;
+var z = 'a';
+var p = "This is test";
+
+console.log("\n The value of X is : \n" + x + "\n The value of Y is : \n " + y + "\n The value of Z is : \n" + z + "\n The value of P is : \n" + p );
+
+
+// Operator : Addition '+', Subtraction '-', Multiplication '*', Division '/', Modulus '%'
+
+var a1 = 100, a2 = 25, a3 = 12.75;
+
+var add; 
+var sub;
+var mul; 
+var div; 
+var mod;
+
+add = a1+a2;
+sub = (a1+a2) - a3;
+mul = a1 * a3;
+div = a1 / a2;
+mod = a1%a3;
+
+console.log("Addition : " +add);
+console.log("Subtraction : " +sub);
+console.log("Multiplication : " +mul);
+console.log("Division : " +div);
+console.log("Modulus : " +mod);
+
+// Assignment operators 
+var b1= 50;
+var b2 = 25;
+var b3;
+
+b3 = b1;
+console.log("Value of B3:" +b3);
+
+b1+=b2;
+console.log("Value of B1:" +b1);
+
+b3-=b1;
+console.log("Value of B3:" +b3);
+
+b1*=b2;
+console.log("Value of B1:" +b1);
+
+b1/=b2;
+console.log("Value of B1:" +b1);

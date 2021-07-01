@@ -1,0 +1,57 @@
+// Code structure, Variable & Data Typers
+
+// Structure 1
+var x;
+x=12;
+console.log("Value of X is: " +x);
+
+
+// Structure 2
+
+var y =3.14;
+console.log("Value of Y is:" +y);
+
+// Structure 3
+
+var p,q,r;
+p=5;
+q=10.234;
+r=p+q;
+
+console.log("Value of R is :" +r);
+
+
+// Structure 4
+
+let a, b, c;
+a = 5; b = '*'; c = a + b, 
+
+console.log("Value of C is :" +c);
+
+// Structure 5
+let value1 = "Hello";
+let value2 = "World";
+
+console.log(value1 + " " + value2);
+
+
+// Structure 6
+var i="5";
+var j=2+3;
+
+console.log();
+
+
+// Structure 7 with $ as an identifier
+var $ = 2000;
+var $myMoney = "Indian Rupee";
+
+
+console.log($myMoney +" "+ $);
+
+
+// Structure 8 with _ as an identifier
+
+var _x = 2;
+var _100 = 5;
+console.log(_x + _100);

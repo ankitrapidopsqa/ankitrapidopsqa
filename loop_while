@@ -1,0 +1,32 @@
+// While Loop
+
+// Test 1
+
+var i = 1, n = 5;
+
+while (i <= n) {
+    console.log(i);
+    i += 1;
+}
+console.log("=====");
+// Test 2
+
+var j=1;
+
+while(j<10){
+     console.log(j);
+       j+=2;
+}
+
+console.log("=====");
+// Test 3
+
+var j=0;
+
+while(j<10){
+     console.log(j);
+       j=j+2;
+}
+
+console.log("=====");
+// Test 4

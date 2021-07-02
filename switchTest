@@ -1,0 +1,88 @@
+//Test 1
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+console.log("Today is : " +day);
+
+console.log("===============");
+//Test 2
+var grade = 'C';
+
+var message;
+
+switch (grade) {
+    case "A":
+        message = "Excellent";
+        break;
+
+    case "B":
+        message = "Very Good";
+        break;
+
+    case "C":
+        message = "Good";
+        break;
+
+    case "D":
+        message = "Pass";
+        break;
+
+    case "E":
+        message = "Almost a pass";
+        break;
+
+    case "F":
+        message = "Fail";
+        break;
+
+    default:
+        message = "Please enter a grade from A-F";
+}  
+
+console.log(message);
+
+console.log("============");
+
+//Test 3
+var percentage = 65.40;
+
+switch (true) {
+    case percentage >= 70:
+    console.log("Dist");
+    break;
+    
+    case percentage >= 60:
+    console.log("First Class");
+    break;
+    
+    case percentage >= 50:
+    console.log("Second Class");
+    break;
+    
+    case percentage >= 35:
+    console.log("Pass Class");
+    break;
+    
+    default:
+    console.log("Fail");
+}

@@ -1,0 +1,43 @@
+//Test 1
+var x = calcAdd(100,25);
+console.log("Value of X:" +x);
+
+function calcAdd(a,b){
+    return a+b;
+}
+
+var y = calcSub(24,19.75);
+console.log("Value of Y:" +y);
+
+function calcSub(c,d){
+    return c-d;
+}
+
+var z = calcMul(9,8);
+console.log("Value of Z:" +z);
+
+function calcMul(e,f){
+    return e*f;
+}
+
+var w = calcDiv(72,8);
+console.log("Value of W:" +w);
+
+function calcDiv(g,h){
+    return g/h;
+}
+console.log("=========");
+
+// Test 2
+
+const a = function (a, b) {return a + b};
+console.log("New value of A : " +a (14, 6));
+
+const b = function (a, b) {return a - b};
+console.log("New value of B : " +b (-4,3));
+
+const c = function (a, b) {return a * b};
+console.log("New value of C : " +c (4,3));
+
+const d = function (a, b) {return a / b};
+console.log("New value of D : " +d (15,3));

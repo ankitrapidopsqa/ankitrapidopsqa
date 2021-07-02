@@ -1,0 +1,38 @@
+//Test 1
+
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+console.log("Greeting :" +greeting);
+
+// Test 2
+
+var x="Today is Friday";
+var confirmation;
+
+if (x=="Sunday"){
+    confirmation = "Wrong";
+}else{
+    confirmation = "Right";
+}
+console.log("confirmation :" +confirmation);
+
+// Test 3
+var percentage = 80;
+var result;
+
+if (percentage > 70){
+    result = "Dist";
+}
+else{
+    result = "First Class";
+   }
+
+console.log("Student result is:" +result);
+

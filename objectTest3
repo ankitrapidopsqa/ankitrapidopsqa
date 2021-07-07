@@ -1,0 +1,45 @@
+//Test 1
+
+const team ={
+    dept : "QA",
+    name : "Ankit Brahmbhatt",
+    empId :219,
+    detail: function(){
+        return this.name + " " + this.empId;
+    }
+};
+
+console.log(team.detail());
+
+console.log("--------------");
+
+
+//Test 2
+
+const carCollection = {
+    name: "Hemal",
+    age: 34,
+    cars:{name: "Suzuki", models:["Alto", "Celerio"]},
+    garage: function(){
+        return this.name + "\n" + this.cars.models;
+    }
+};
+
+console.log(carCollection.garage());
+console.log("------------------");
+//Test 3
+
+const person = {
+  firstname: "Hemal",
+  lastname: "Brahmbhatt",
+  age: 34,
+  eyecolor: "black",
+
+    fullDetails: function(){
+        return this.firstname + " " + this.lastname + " " + this.age + " " + this.eyecolor;
+     }
+
+};
+console.log(person.fullDetails());
+
+// Test 4

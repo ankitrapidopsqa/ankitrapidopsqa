@@ -1,0 +1,97 @@
+//Test 1
+
+const a = new Date();
+console.log(a);
+
+
+console.log("-------------------");
+//Test 2
+
+const b = new Date (2021, 07, 06, 10, 30, 30, 0);
+console.log(b);
+
+console.log("-------------------");
+
+//Test 3
+const c = new Date("July 06, 2021 02:13:00");
+console.log(c);
+
+console.log("-------------------");
+
+//Test 4
+
+const d = new Date();
+console.log(d.toString());
+console.log(d.toUTCString());
+
+console.log("-------------------");
+
+//Test 5
+
+let msec = Date.parse("March 21, 2012");
+const e = new Date(msec);
+console.log(+e);
+
+console.log("-------------------");
+
+//Test 6
+
+const f = new Date();
+console.log(f.getTime());
+console.log(f.getFullYear());
+console.log(f.getMonth());
+console.log(f.getDate());
+console.log(f.getHours());
+console.log(f.getMinutes());
+console.log(f.getSeconds());
+console.log(f.getMilliseconds());
+console.log(f.getDay());
+
+console.log("-------------------");
+
+//Test 7
+
+const g = new Date();
+const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+console.log(month[g.getMonth()]);
+
+console.log("-------------------");
+
+//Test 8
+const h = new Date();
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+console.log(days[d.getDay()]);
+console.log("-------------------");
+
+//Test 9
+
+const i= new Date();
+i.setFullYear(2019);
+console.log(i);
+
+i.setFullYear(2020, 08, 21);
+console.log(i);
+
+i.setMonth(05);
+console.log(i);
+
+
+i.setDate(09);
+console.log(i);
+console.log("-------------------");
+
+// Test 10
+
+let text;
+const today = new Date();
+const someday = new Date();
+
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today){
+    test = "Today is before July 06, 2100.";
+} else {
+    test = "Today is after July 06, 2100.";
+}
+
+console.log(test);

@@ -41,3 +41,4 @@ console.log("New value of C : " +c (4,3));
 
 const d = function (a, b) {return a / b};
 console.log("New value of D : " +d (15,3));
+

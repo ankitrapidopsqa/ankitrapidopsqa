@@ -1,0 +1,69 @@
+//Test 1
+
+const fruit = {
+name: "Mango",
+taste: "Sweet",
+color: "Yellow"
+}
+
+fruit.country = "India";
+
+console.log(fruit.name + " from " + fruit.country + ".");
+console.log("-------------");
+// Test 2
+
+const person = {
+  firstname: "Hemal",
+  lastname: "Brahmbhatt",
+  age: 34,
+  eyecolor: "black"
+};
+
+delete person.age;
+
+console.log(person.firstname + " is " + person.age + " years old.");
+console.log("-------------");
+
+// Test 3
+
+const myClass = {
+    subject : "English",
+    duration : 1.5,
+    lacture:{
+    lacture1 : "grammer",
+    lacture2 : "poem",
+    lacture3 : "lesson"
+    }
+}
+console.log(myClass.lacture.lacture1);
+
+console.log(myClass.lacture["lacture2"]);
+
+console.log(myClass["lacture"]["lacture3"]);
+
+let lac1 = "lacture";
+let lac2 = "lacture2";
+
+console.log (myClass[lac1][lac2]);
+
+console.log("-------------");
+
+//Test 4
+
+var x = " ";
+const carCollection = {
+    name: "Hemal",
+    age: 34,
+    cars:[
+        {name: "Suzuki", models:["Alto", "Celerio"]},
+        {name: "Hyundai", models: ["i10", "Verna"]},
+        {name: "Tata", models: ["Bolt", "Nexon", "Safari"]}
+    ]
+}
+for(var i in carCollection.cars){
+    x+="\n" + carCollection.cars[i].name + "\n";
+    for (var j in carCollection.cars[i].models){
+        x+=carCollection.cars[i].models[j] + "\n";
+    }
+  }
+console.log(x);

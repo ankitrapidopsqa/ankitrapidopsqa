@@ -1,0 +1,86 @@
+//Test 1
+let x=3.14;
+let y=3;
+let z;
+
+z=x*y;
+
+console.log(z);
+
+
+console.log("++++++++++++++++");
+
+//Test 2
+
+let a = 123;
+console.log(a.toString() + "\n" + 
+(123).toString() + "\n" + 
+(100 + 23).toString());
+
+let b = 10.234;
+console.log(
+    b.toExponential()+ "\n"+
+    b.toExponential(2)+ "\n"+
+    b.toExponential(4)+ "\n"+
+    b.toExponential(6));
+
+console.log(
+    b.toFixed(0)+ "\n"+
+    b.toFixed(2)+ "\n"+
+    b.toFixed(4)+ "\n"+
+    b.toFixed(6)
+);
+
+
+console.log(
+    b.toPrecision() + "\n" +
+  b.toPrecision(2) + "\n" +
+  b.toPrecision(4) + "\n" +
+  b.toPrecision(6)
+  ); 
+console.log("++++++++++++++++");
+
+//Test 3
+//Global Method - Number()
+
+var c= new Date("2021-07-06");
+
+  console.log(Number(true) + "\n" +
+  Number(false) + "\n" +
+  Number("10") + "\n" +
+  Number("  10") + "\n" +
+  Number("10  ") + "\n" +
+  Number(" 10  ") + "\n" +
+  Number("10.33") + "\n" +
+  Number("10,33") + "\n" +
+  Number("10 33") + "\n" +
+  Number("Ankit"));
+
+console.log(Number(c));
+
+console.log("++++++++++++++++");
+//Test 4
+//Global method parseInt()
+
+console.log(
+  parseInt("-10") + "\n" +
+  parseInt("-10.33") + "\n" +
+  parseInt("10") + "\n" +
+  parseInt("10.33") + "\n" +
+  parseInt("10 6") + "\n" + 
+  parseInt("10 years") + "\n" +
+  parseInt("years 10")
+);
+console.log("++++++++++++++++");
+//Test 5
+
+//Global method parseFloat()
+console.log(
+    parseFloat("10") + "\n" +
+    parseFloat("10.33") + "\n" +
+    parseFloat("10 6") + "\n" +  
+    parseFloat("10 years") + "\n" +
+    parseFloat("years 10")
+);
+
+console.log("++++++++++++++++");

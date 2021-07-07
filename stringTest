@@ -1,0 +1,97 @@
+//Test 1
+let text = "Today is Tuesday";
+
+console.log(text.length);
+
+
+//Test 2
+
+var text2="Today is not \"Holiday\" ";
+
+console.log(text2);
+
+//Test 3
+let x = "RapidOps";
+let y = new String("Kroger");
+var z = 120.09;
+
+console.log(typeof x + "\n" + typeof y + "\n" + typeof z);
+
+// Test 4
+let p = "RapidOps";
+let q = new String ("RapidOps");
+
+console.log(p==q);
+
+console.log(p===q);
+
+
+// Test 5
+let fruit = "Apple, Banana, Kiwi, Orange";
+console.log(fruit.slice(7,13));
+console.log(fruit.substring(7,13));
+
+// Test 6
+
+let t1 = "Hello";
+let t2 = "World!";
+let t3 = t1.concat(" ",t2);
+console.log(t3);
+
+// Test 7
+
+let c = "Please visit Microsoft!";
+let d = c.replace("Microsoft", "W3Schools");
+//console.log(c);
+console.log(d);
+
+//Test 8
+var a1= "HELLO WORLD";
+console.log(a1.charAt(0));
+console.log(a1.charAt(2));
+console.log(a1.charAt(7));
+
+//Test 9
+var a2 = "Today is Tuesday";
+var a3 = a2.toUpperCase();
+var a4 = a2.toLowerCase();
+console.log(a3);
+console.log(a4);
+
+
+// Test 10
+var gen1 = "I am";
+var gen2 = "Learning";
+var gen3 = "Java Script";
+
+var general = gen1.concat(" ", gen2);
+var general2 = general.concat (" ",gen3);
+
+console.log(general2);
+
+// Test 11
+let str1 = "Conditions are never perfect.";
+console.log(str1.indexOf("never"));
+
+console.log(str1.lastIndexOf("are"));
+
+console.log(str1.lastIndexOf("Ankit"));
+
+console.log(str1.search("never"));
+
+// Test 12
+
+let line = "Venus is the second planet from THE Sun. Venus is named after the Roman goddess of love and beauty.";
+console.log(line.match (/the/g));
+console.log(line.match (/THE/gi));
+console.log(line.match (/Venus/g));
+console.log(line.match (/venus/gi));
+
+console.log(line.includes("planet"));
+console.log(line.includes("Moon"));
+
+console.log(line.startsWith("Venus"));
+console.log(line.startsWith("Planet"));
+
+console.log(line.endsWith("Sun"));
+console.log(line.endsWith("beauty."));

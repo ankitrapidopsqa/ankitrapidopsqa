@@ -1,0 +1,32 @@
+//Test 1
+let person ={
+firstName : "Ankit",
+age : 35
+};
+
+
+console.log("My name is " + person.firstName + "I am " +person.age + "year old.\n");
+
+const person1 ={};
+person1.sex = "Male";
+person1.nationality = "Indian";
+
+console.log("I am " + person1.sex + "I am an " +person1.nationality);
+
+console.log("--------------------");
+
+//Test 2
+
+const person3 = new Object();
+person3.firstName = "Kiran";
+person3.age=30;
+person3.sex = "Female";
+person3.nationality = "Australian";
+
+console.log("She is" + person3.firstName + " She is " + person.age + " years old."+
+"She is " + person3.sex + "Her nationality is " + person3.nationality);
+
+const x = person3;
+x.age = 32;
+
+console.log("She is " + x.firstName + "Her age is :" + x.age);

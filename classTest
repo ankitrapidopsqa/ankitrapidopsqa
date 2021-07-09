@@ -1,0 +1,224 @@
+//Test 1
+
+class Car{
+    constructor(name, year){
+            this.name = name;
+            this.year = year;
+    }
+}
+
+const myCar = new Car("Ford", 2014);
+
+console.log(myCar.name + " " + myCar.year);
+console.log("--------------");
+// Test 2
+class Bike{
+    constructor(make, model, price){
+        this.make = make;
+        this.model = model;
+        this.price = price;
+    }
+}
+
+const myBike = new Bike ("Triumph", "Daytona", "INR 14,00,000");
+
+console.log("My Bike Detail \n" +
+            myBike.make + "\n" +
+            myBike.model + "\n" +
+            myBike.price);
+
+console.log("--------------");
+//Test 3
+
+class Age{
+    constructor (name, year){
+        this.name = name;
+        this.year = year;
+    }
+    age(x){
+        return x - this.year;
+    }
+}
+
+var date = new Date();
+var year = date.getFullYear();
+
+var myAge = new Age ("Ankit", "1986");
+
+console.log("My current age : " + myAge.age(year));
+console.log("--------------");
+//Test 4
+
+class Staff {
+  constructor(post) {
+    this.staffname = post;
+  }
+  present() {
+    return 'We have ' + this.staffname;
+  }
+}
+
+class Member extends Staff {
+  constructor(post, lev) {
+    super(post);
+    this.level = lev;
+  }
+  show() {
+    return this.present() + ', He is a ' + this.level;
+  }
+}
+
+let myStaff = new Member("Ankit", "QA Engineer");
+console.log(myStaff.show());
+
+console.log("--------------");
+
+//Test 5
+
+function Person() {
+    this.firstName = " ";
+    this.lastName = " ";
+}
+
+var person1 = new Person();
+person1.firstName = "Ankit";
+person1.lastName = "Brahmbhatt";
+            
+console.log(person1.firstName + " " + person1.lastName);
+
+var person2 = new Person();
+person2.firstName = "Hardik";
+person2.lastName = "Nayee";
+            
+console.log(person2.firstName + " " + person2.lastName );
+
+console.log("--------------");
+
+//Test 6
+
+function City(){
+    this.district = " ";
+    this.state = " ";
+    this.getFullName = function(){
+        return this.district+ " " + this.state;
+    }
+};
+
+var city1 = new City();
+city1.district = "Ahmedabad";
+city1.state = "Gujarat";
+
+console.log(city1.getFullName());
+
+var city2 = new City();
+city2.district = "Bombay";
+city2.state = "Maharashtra";
+
+console.log(city2.getFullName());
+
+
+console.log("--------------");
+
+//Test 7
+
+function Faculty() {
+    var _firstName = " ";
+
+    Object.defineProperties(this, {
+        "FirstName": {
+            get: function () {
+                return _firstName;
+            },
+            set: function (value) {
+                _firstName = value;
+            }
+        }
+    });
+};
+
+var faculty1 = new Faculty();
+faculty1.FirstName = "Nishit";
+console.log(faculty1.FirstName );
+            
+var faculty2 = new Faculty();
+faculty2.FirstName = "Dipesh";
+console.log(faculty2.FirstName );
+
+
+// Test 8
+
+class book{  //Class name 'book'
+    constructor(name){              // passed argument called 'name'
+        this.bookname = name;
+
+    }
+}
+
+newbook = new book("Introduction of Java Script");
+
+console.log("My new book name is : " +newbook.bookname);
+
+// Test 9 : Need to Discuss
+
+/* class sbook {
+constructor(sname) {
+this.sbookname = sname;
+}
+spresent() {      // New method calles "spresent"
+return "I have a " + this.sbookname+ " book";
+}
+}
+snewbook = new book("Harry Potter");
+console.log(snewbook.spresent());
+*/
+
+//Test 10
+
+class game{
+    constructor (indor){
+        this.gamename = indor;
+    }
+        static first (para){
+            return para.gamename;
+        }
+}
+newgame = new game ("Chess");
+console.log(game.first(newgame));
+
+
+// Test 11
+var Mobile = function(model_no){
+    this.model = model_no; // Instance Member
+    this.price = 30000;
+};
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('Lumia');
+
+Mobile.prototype.color = 'White'; //Classname.prototype.key = 'value'; || Prototype member
+console.log(samsung);
+console.log(nokia);
+
+// Test 12
+let Fabric = function(material){
+    this.materialName = material;
+    this.price = 500; 
+};
+
+var cotton = new Fabric ('20 Kg');
+var rayon = new Fabric ('14 Kg');
+
+Fabric.prototype.color = 'Blue';
+console.log(cotton);
+console.log(rayon);
+
+//Test 13
+
+var Univerysity = function(college){
+    this.stream = college;
+    this.course = B.com;
+};
+
+var ngcca = new Univerysity ("B.Com");
+
+console.log
+//Test 13

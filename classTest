@@ -221,4 +221,3 @@ var Univerysity = function(college){
 var ngcca = new Univerysity ("B.Com");
 
 console.log
-//Test 13

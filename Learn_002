@@ -1,0 +1,21 @@
+// Test 1
+function fahrenheit(celc){
+    var fah = 1.8 * celc +32;
+    console.log("Fahrenheit value : " +fah);
+}
+fahrenheit(37.5);
+console.log("-----------------------");
+
+
+//Test 2
+
+function exchange(value1, value2){
+    var ex;
+    ex=value1;
+    value1=value2;
+    value2 = ex;
+    console.log("First value : "+value1 + "Second value : "+value2);
+}
+exchange(10, 21);
+
+console.log("-----------------------");

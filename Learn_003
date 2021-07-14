@@ -1,0 +1,80 @@
+//Test 1
+class Mobile{
+    constructor(){
+    //Instance member
+    this.price = 25000;
+    this.show = function(){
+        return "This is a Nokia Mobile";
+    };
+}
+//Prototype member
+display(){
+    return "You are looking NOKIA Mobile";
+}
+}
+var nokia = new Mobile();
+console.log(nokia.price);
+console.log(nokia.show());
+console.log(nokia.display());
+
+
+// Test 2
+class School{
+    constructor(){
+        this.student=50;
+        this.boys = 30;
+        this.girls = 20;
+        this.absent = function() {
+            return "Today 2 students are absent";
+        };
+    }
+    display(){
+        return "Today 1 boy & 1 girl is absent";
+}
+}
+
+let count = new School();
+console.log("Total Students in class : " + count.student);
+console.log("Total Boys in class : " + count.boys);
+console.log("Total Girls in class : " + count.girls);
+console.log("How many students absents today : " + count.absent());
+console.log("Who are absent : " + count.display());
+
+
+// Test 3
+
+let Vehicle = function(model_no){
+    this.model = model_no;
+    this.price = 78000;
+};
+
+var honda = new Vehicle ('CBR');
+var suzuki = new Vehicle ('Gixer');
+
+Vehicle.prototype.cc = '150cc';
+Vehicle.prototype.color = 'Black';
+
+console.log("Color of Honda CBR : " + honda.color + "\n Price of CBR : " + honda.price);
+console.log("CC of Suzuki Gixer is : " + suzuki.cc);
+
+
+// Test 4
+
+class Employee{  
+ 
+    constructor(id,name)  
+    {  
+      this.id=id;  
+      this.name=name;  
+    }  
+ 
+    detail()  
+    {  
+        console.log(this.id + " " + this.name + "\n");
+    }  
+  }  
+
+var e1=new Employee(101,"Hemal Brahmbhatt");  
+var e2=new Employee(102,"Hardik Nayee");  
+e1.detail(); //calling method  
+e2.detail();  

@@ -1,0 +1,190 @@
+//Test 1
+
+function display(){   //Creating function
+    console.log("Hi, I am learning java script");
+}
+
+// Calling function
+display();
+console.log("------------------------");
+// Test 2
+
+function school(name){
+    console.log(name);
+}
+
+school(120);
+school(true);
+school("My School");
+console.log("------------------------");
+// Test 3
+
+function schoolDetail(name, city){
+    console.log(name);
+    console.log(city);
+}
+
+schoolDetail("Jyoti Vidhya Mandir", "Ahmedabad");
+console.log("------------------------");
+// Test 4
+function india (state, city, students){
+    console.log("Our state is" + state + ".\n" +
+                "Out city is" + city + ".\n" +
+                "We are total" + students + "students who have applied for the Java Script examination.");
+}
+
+india("Gujarat", "Ahmedabad", "15");
+india("Gujarat", "Rajkot", "5");
+india("UP", "Allahabad", "25");
+india("Madhya Pradesh", "Indore", "45");
+
+console.log("------------------------");
+
+
+// Test5 - Function, argument missing
+
+function add(a,b,c){
+    console.log("A:"+a+"B:"+b+"C:"+c);
+}
+
+add(10,20);
+console.log("------------------------");
+
+// Test 6 - Argument Object
+
+function disp(name1, name2){
+    console.log(arguments.length);
+}
+disp ("Hello", "World");
+console.log("-----------------------");
+// Test 7
+function disp2(){
+    console.log(arguments[0]);
+    console.log(arguments[1]);
+    console.log(arguments[2]);
+}
+disp2("Hello", "I am", "Ankit");
+
+console.log("-----------------------");
+//Test 8
+
+function disp3(){
+    for(var i=0; i<arguments.length; i++){
+        console.log(arguments[i]);
+    }
+}
+disp3 ("Hello", "World", "I am", "Leaving", "in", "Mehsana");
+console.log("-----------------------");
+
+
+//Test 9 - Too many function arguments
+
+function add2(a,b){
+    console.log("A:" +a + "B:" +b + "C:" + arguments[2]);
+}
+add2(10, 20, 30);
+console.log("-----------------------");
+// Test 10
+
+function test(p, q, r=80){
+    console.log("P :" +p);
+    console.log("Q :" +q);
+    console.log("R :" +r);
+}
+test(12.5, 67);
+
+console.log("-----------------------");
+
+// Test 11
+
+function test1(x, y=45.9, z=80){
+    console.log("X :" +x);
+    console.log("Y :" +y);
+    console.log("Z :" +z);
+}
+test1(12.5, 67);
+
+console.log("-----------------------");
+
+// Test 13
+
+function test2(i, j=90, k){
+    console.log("I :" +i);
+    console.log("J :" +j);
+    console.log("K :" +k);
+}
+test2(12.5, 67);
+
+console.log("-----------------------");
+
+// Test 14
+
+function addition(value1, value2){
+    var add=value1+value2;
+    console.log(add);
+}
+addition(100,45);
+
+function subtraction(value3, value4){
+    var sub=value3-value4;
+    console.log(sub);
+}
+subtraction(100,45);
+
+function multiplication(value5, value6){
+    var mul=value5*value6;
+    console.log(mul);
+}
+multiplication(100,45);
+
+function division(value7, value8){
+    var div=value7/value8;
+    console.log(div);
+}
+division(100,45);
+
+console.log("-----------------------");
+
+// Test 15
+function square(value9){
+    var sqr = value9 * value9;
+    console.log("Square of value is : "+sqr);
+}
+square(1);
+square(2);
+square(3);
+square(4);
+square(5);
+square(6);
+square(7);
+square(8);
+square(9);
+square(10);
+console.log("-----------------------");
+
+// Test 16
+function cube(value10){
+    var cb = value10 * value10 * value10;
+    console.log("Cube of value is : "+cb);
+}
+cube(1);
+cube(2);
+cube(3);
+cube(4);
+cube(5);
+cube(6);
+cube(7);
+cube(8);
+cube(9);
+cube(10);
+console.log("-----------------------");
+
+//Test 17
+
+function _formula1(e, f, g){
+    var _f1 = (e*f*g) / 100;
+    console.log("Simple intrest : "+_f1);
+}
+_formula1(12,3,9);
+
+console.log("-----------------------");

@@ -1,0 +1,112 @@
+class Father{               // Base Class
+    showFMoney(){
+        return "Father's money";
+    }
+}
+
+class Son extends Father{           // Child Class with inheritance
+    showSMoney(){
+        return "Son's money";
+    }
+}
+
+var s = new Son();
+console.log(s.showFMoney());
+console.log(s.showSMoney());
+
+class GrandSon extends Son{
+    showGMoney(){
+        return "Grand son's money";
+    }
+}
+
+var g = new GrandSon();
+console.log(g.showFMoney());
+console.log(g.showSMoney());
+console.log(g.showGMoney());
+
+
+
+console.log("-------------------");
+
+// Test 2
+
+class SurName{               // Base Class
+    showSurName(){
+        return " Brahmbhatt";
+    }
+}
+
+class FatherName extends SurName{           // Child Class with inheritance
+    showFatherName(){
+        return " Bhupendrakumar";
+    }
+}
+
+var f = new FatherName();
+console.log("My Father's name : " + f.showFatherName() + f.showSurName());
+
+class MyName extends FatherName{           // Child Class with inheritance
+    showMyName(){
+        return "Ankit";
+    }
+}
+
+var name = new MyName();
+console.log("My name is : "+ name.showMyName() +  name.showFatherName() + name.showSurName());
+
+console.log("-------------------");
+
+// Test 3
+
+class Color{
+    showColor(){
+        return " Black";
+    }
+}
+
+class Bike extends Color{
+    showBike(){
+        return " Suzuki";
+    }
+}
+
+var bike = new Bike();
+console.log("My Bike brand :" + bike.showBike());
+console.log("My Bike color :" + bike.showColor());
+
+class Make extends Bike{
+    showMake(){
+        return " 2020";
+    }
+}
+var make = new Make();
+console.log("Bike purchase Year : " + make.showMake());
+console.log("Bike brand : " + make.showBike());
+console.log("Bike Color : " + make.showColor());
+
+// Test 4
+class Car{
+    calculateSpeed(d,t){
+    var distance;
+    var time;
+    var speed;
+    distance = d;
+    time = t;
+    speed = distance / time;
+    return speed;
+    }
+}
+
+class Benz extends Car{
+    var cost = 7000000;
+    var brand = "Mercides";
+    getDistanceTime(){
+        console.log(Benz.distance);
+        console.log(Benz.time);
+    }
+}
+console.log(Benz.calculateSpeed(100,2));
+console.log(Benz.cost());
+console.log(Benz.brand());
+console.log(Benz.getDistanceTime());
